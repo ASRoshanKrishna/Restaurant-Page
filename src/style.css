@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    height: 100vh;
+    background: url('./dosaBG.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid #f3f4f6;
+}
+
+header button{
+    background: transparent;
+    color: #f3f4f6;
+    border: none;
+    width: 6rem;
+    height: 4rem;
+    font-size: 23px;
+}
+
+#home:hover,
+#menu:hover,
+#contact:hover{
+    border-bottom: 2px solid #f3f4f6;
+}
+
+#content{
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.intro{
+    padding: 2%;
+    margin-top: 4rem;
+    width: 36rem;
+    height: 23rem;
+    color: #f3f4f6;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.intro hr{
+    margin: 3px;
+    width: 55%;
+    height: 2px;
+    background-color: #f3f4f6;
+}
+
+.intro p{
+    margin: 2%;
+}
+
+.menuBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 3px;
+    color: #f3f4f6;
+}
+
+.box1{
+    grid: 1 / 1;
+}
+
+.box2{
+    grid: 1 / 2;
+}
+
+.box3{
+    grid: 2 / 1;
+}
+
+.box4{
+    grid: 2 / 2;
+}
+
+.box1,
+.box2,
+.box3,
+.box4{
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 35rem;
+    height: 10rem;
+    margin: 30px;
+    padding: 15px;
+    font-size: 15px;
+    gap: 55px;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#idli,
+#dosa,
+#rice,
+#pongal{
+    grid-column: 1;
+    width: 65%;
+    height: 60%;
+    border-radius: 3px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-self: center;
+}
+
+#idli{
+    background-image: url('./idli.jpg');
+}
+
+#dosa{
+    background-image: url('./dosaBG.jpg');
+}
+
+#rice{
+    background-image: url('./rice.jpg');
+}
+
+#pongal{
+    background-image: url('./pongal.jpg');
+}
+
+#res hr{
+    margin: auto;
+    width: 70%;
+    height: 2px;
+    background-color: #f3f4f6;
+}
+
+#res{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;   
+}
