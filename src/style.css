@@ -1,6 +1,11 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('./my-font.otf');
+ }
+
 *{
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'MyFont','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body{
