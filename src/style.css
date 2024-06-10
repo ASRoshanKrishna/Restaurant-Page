@@ -18,7 +18,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 5px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     border-bottom: 2px solid #f3f4f6;
 }
 
@@ -31,9 +31,7 @@ header button{
     font-size: 23px;
 }
 
-#home:hover,
-#menu:hover,
-#contact:hover{
+.current{
     border-bottom: 2px solid #f3f4f6;
 }
 
@@ -55,7 +53,7 @@ header button{
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .intro hr{

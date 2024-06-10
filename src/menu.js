@@ -1,13 +1,13 @@
 export default function menu(){
     const menuBox = document.createElement('div');
-    menuBox.className = 'menuBox';
+    menuBox.classList.add('menuBox');
     let cont = `<div class="box1">
                 <div id="idli"></div>
                 <div id="res">
                 <h2>IDLI</h2>
                 <hr>
                 <p> Rice cake which is spongy in texture made of a rice batter</p>
-                <h2>Rs20</h2>
+                <h2>Rs15</h2>
                 </div></div>
                 <div class="box2">
                 <div id="dosa"></div>
@@ -15,7 +15,7 @@ export default function menu(){
                 <h2>DOSA</h2>
                 <hr>
                 <p>South Indian cuisine made from a fermented batter of ground white gram and rice</p>
-                <h2>Rs20</h2>
+                <h2>Rs25</h2>
                 </div></div>
                 <div class="box3">
                 <div id="rice"></div>
@@ -23,7 +23,7 @@ export default function menu(){
                 <h2>CHICKEN CHETTINAD</h2>
                 <hr>
                 <p>Classic Indian recipe, from the cuisine of Chettinad in Tamil Nadu.</p>
-                <h2>Rs20</h2>
+                <h2>Rs50</h2>
                 </div></div>
                 <div class="box4">
                 <div id="pongal"></div>
