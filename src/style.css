@@ -11,10 +11,12 @@
 body{
     display: grid;
     grid-template-rows: 1fr 4fr;
-    height: 100vh;
-    background: url('./dosaBG.jpg');
+    background: url('./images/dosaBG.jpg');
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
 
 header{
@@ -73,59 +75,54 @@ header button{
 }
 
 .menuBox{
+    width: 100%;
+    height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, 500px);
+    justify-content: space-around;
     gap: 3px;
+    margin-top: 15px;
     color: #f3f4f6;
 }
 
-.box1{
-    grid: 1 / 1;
-}
-
-.box2{
-    grid: 1 / 2;
-}
-
-.box3{
-    grid: 2 / 1;
-}
-
-.box4{
-    grid: 2 / 2;
-}
-
-.box1,
-.box2,
-.box3,
-.box4{
+.box{
     border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
-    width: 35rem;
     height: 10rem;
-    margin: 30px;
     padding: 15px;
     font-size: 15px;
     gap: 55px;
 }
 
-.box1:hover,
-.box2:hover,
-.box3:hover,
-.box4:hover{
+
+.box:hover{
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+.box:hover h2{
+    font-size: 30px;
+    color: #fbbf24;
+}
+
+.box:hover #idli,
+.box:hover #dosa,
+.box:hover #rice,
+.box:hover #pongal,
+.box:hover #biryani,
+.box:hover #fry{
+    transform: scale(1.2);
 }
 
 #idli,
 #dosa,
 #rice,
-#pongal{
+#pongal,
+#biryani,
+#fry{
     grid-column: 1;
     width: 65%;
     height: 60%;
@@ -136,19 +133,27 @@ header button{
 }
 
 #idli{
-    background-image: url('./idli.jpg');
+    background-image: url('./images/idli.jpg');
 }
 
 #dosa{
-    background-image: url('./dosaBG.jpg');
+    background-image: url('./images/dosaBG.jpg');
 }
 
 #rice{
-    background-image: url('./rice.jpg');
+    background-image: url('./images/rice.jpg');
 }
 
 #pongal{
-    background-image: url('./pongal.jpg');
+    background-image: url('./images/pongal.jpg');
+}
+
+#biryani{
+    background-image: url('./images/biryani.jpg');
+}
+
+#fry{
+    background-image: url('./images/fry.jpg');
 }
 
 #res hr{
